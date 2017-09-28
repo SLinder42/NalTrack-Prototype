@@ -1,0 +1,21 @@
+{
+  "name": "NalTrack",
+  "version": "1.0.0",
+  "description": "Files for Naloxone Tracking Web Application",
+  "main": "app/app.js",
+  "scripts": {
+    "start": "node app/app.js"
+  },
+  "author": "Simon Linder",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.15.5",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1",
+    "reload": "^2.2.2"
+  }
+}
