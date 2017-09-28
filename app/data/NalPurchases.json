@@ -1,1 +1,17 @@
-NalPurchases.json
+[
+	{
+		"Date":"9 November 2016",
+		"Amount": "60",
+		"Price": "285.51"
+	},
+	{
+		"Date": "16 February 2017",
+		"Amount": "160",
+		"Price": "482.75"
+	},
+	{
+		"Date": "24 August 2017",
+		"Amount": "250",
+		"Price": "528.36"
+	}
+]

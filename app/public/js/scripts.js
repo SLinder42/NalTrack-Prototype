@@ -1,6 +1,6 @@
-var $ = require('jquery');
-var bootstrap = require('bootstrap');
+// var $ = require('jquery');
+// var bootstrap = require('bootstrap');
 
-$(document).ready(function() {
-	$.getJSON();
-});
+// $(document).ready(function() {
+	// $.getJSON();
+// });

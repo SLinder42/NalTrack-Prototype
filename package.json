@@ -13,7 +13,9 @@
     "bootstrap": "^3.3.7",
     "ejs": "^2.5.7",
     "express": "^4.15.5",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.5",
+    "tooltip.js": "^1.1.5"
   },
   "devDependencies": {
     "nodemon": "^1.12.1",
