@@ -4,15 +4,19 @@ var router = express.Router();
 router.get('/', function(req, res) {
 	var NalPurchaseData = req.app.get("NalPurchases");
 	var NalUseData = req.app.get("NalUses");
-	var OverdoseData = findOverdoses(NalUseData);
-	var FinanceData = findFinances(NalPurchaseData);	
+	var OverdoseData = findOverdoses();
+	var FinanceData = findFinances();
+	var OverdoseSummary = summarizeOverdoses();
+	var FinanceSummary = summarizeFinances();	
 
 	res.render('index', {
 		pageTitle: "Home",
-		pageID: "home"
+		pageID: "home",
+		OverdoseSum: OverdoseSummary,
+		FinanceSum: FinanceSummary
 	});
 
-	function findOverdoses(data) {
+	function findOverdoses() {
 		return "";
 	}
 
@@ -22,8 +26,8 @@ router.get('/', function(req, res) {
 
 	// Take the Naloxone data to summarize uses and fatalities
 
-	function summarizeOverdoses(data) {
-		message = "<p>";
+	function summarizeOverdoses() {
+		message = "";
 		totalNalAmountUsed = 50;
 		totalTargets = 10;
 		totalNalUses = 16;
@@ -39,14 +43,13 @@ router.get('/', function(req, res) {
 		message += " reported, there were ";
 		message += totalNalDeaths;
 		message += " fatalities recorded."
-		message += "</p>"
 		return message;
 	}
 
 	// Take the Naloxone purchases to summarize cost and demand
 
-	function summarizeFinances(data) {
-		message = "<p>";
+	function summarizeFinances() {
+		message = "";
 		totalNalAmount = 70;
 		totalNalCost = 538.17;
 		message += "There have been ";
@@ -55,7 +58,6 @@ router.get('/', function(req, res) {
 		message += "Records indicate $";
 		message += 	totalNalCost
 		message += " has been spent to distribute the life-saving drug."
-		message += "</p>"
 		return message;
 	}
 });

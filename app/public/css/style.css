@@ -1,1 +1,5 @@
-style.css
+/* Stylesheet for NalTrack Site */
+
+.db-crud {
+	display: none;
+}
