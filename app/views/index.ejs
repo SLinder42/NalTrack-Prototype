@@ -2,16 +2,16 @@
 <html lang='en'>
 	<head>
 		<title><%= siteTitle %>--<%= pageTitle %></title>
-		<link rel='stylesheet' href="/css/bootstrap.min.css" type='text/css'>
-		<link rel='stylesheet' href="/css/style.css" type='text/css'>
+		<link rel='stylesheet' href="./css/bootstrap.css" type='text/css'>
+		<link rel='stylesheet' href="./css/style.css" type='text/css'>
 		<meta name='author' content="Simon Linder">
 	</head>
 	<body>
 		<header>
-			<div class="jumbotron hidden-xs">
+			<div class="jumbotron">
 			</div><!-- jumbotron -->
 			<!-- Navigation bar requires more formatting -->
-			<nav class="navbar navbar-toggleable-md navbar-light">
+			<nav class="navbar navbar-toggleable-md navbar-hidden-xs navbar-light bg-primary">
 				<button class="navbar toggler navbar-toggler-right" type='button' data-toggle='collapse' data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -36,17 +36,17 @@
 			<p class="lead text-justify">This is a mockup of a web application to track Naloxone uses and purchases within an organization. You should be able to figure out how much you are spending in order to reduce overdose fatalities within your jurisdiction and how potent you need the naloxone to be to save lives.</p>
 			<div class="row">
 				<div class="col-sm-6">
-					<div class="panel-primary">
-						<div class="panel-heading">Finance Summary</div>
-						<div class="panel-body"><%= FinanceSum %></div>
+					<div class="card bg-primary">
+						<div class="card-header text-white">Finance Summary</div>
+						<div class="card-body text-white"><%= FinanceSum %></div>
 						<!-- Was trying to get the function result printed here, but Node kept saying the function was undefined -->
 					</div>
 				</div>
 				<div class="col-sm-6">
 					<!-- Class formatting seems not to be working -->
-					<div class="panel-danger">
-						<div class="panel-heading">Overdose Summary</div>
-						<div class="panel-body"><%= OverdoseSum %></div>
+					<div class="card bg-danger">
+						<div class="card-header text-white">Overdose Summary</div>
+						<div class="card-body text-white"><%= OverdoseSum %></div>
 					</div>
 				</div>
 			</div><!-- row -->
@@ -54,7 +54,7 @@
 		<script src="js/jquery-3.2.1.min.js"></script>
 		<script src="js/popper.js"></script>
 		<script src="js/tooltip.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap.js"></script>
 		<!-- <script src="js/scripts.js"></script> -->
 	</body>
 </html>

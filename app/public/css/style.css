@@ -3,3 +3,15 @@
 .db-crud {
 	display: none;
 }
+
+.jumbotron {
+	display: none;
+}
+
+/* Change the display when on a screen larger than a phone */
+
+@media (min-width: 760px) {
+	.jumbotron {
+		display: block;
+	}
+}

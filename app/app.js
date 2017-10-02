@@ -22,6 +22,11 @@ app.use(require('./routes/datadisplay'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
+// Load JQuery and Bootstrap through NPM Modules
+// app.use('/js', express.static(__dirname+"/node_modules/bootstrap/dist/js"));
+// app.use('/js', express.static(__dirname+"/node_modules/jquery/dist/"));
+// app.use('/css', express.static(__dirname+"/node_modules/bootstrap/dist/css"));
+
 var server = app.listen(app.get('port'), function() {
 	console.log('Listening on port ' + app.get('port'));
 });
