@@ -31,7 +31,14 @@ var server = app.listen(app.get('port'), function() {
 	console.log('Listening on port ' + app.get('port'));
 });
 
+// Normal start script:
+// "start": node app/app.js
+
 // Start script for package.json in dev mode:
 // "start": "nodemon -e css,ejs,js,json --watch app --ignore NalPurchases.json,NalUses.json"
+
+// Start scripts for package.json using pingy:
+// "start": "pingy dev",
+// "export": "pingy export"
 
 reload(app);
