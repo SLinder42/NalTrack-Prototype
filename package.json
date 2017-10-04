@@ -1,10 +1,10 @@
 {
   "name": "NalTrack",
-  "version": "0.5.2",
+  "version": "0.5.4",
   "description": "Files for Naloxone Tracking Web Application",
   "main": "app/app.js",
   "scripts": {
-    "start": "node app/app.js"
+    "start": "node app/app.js & open http://localhost:3000"
   },
   "repository": {},
   "author": "Simon Linder",

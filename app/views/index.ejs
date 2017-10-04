@@ -11,7 +11,7 @@
 			<div class="jumbotron">
 			</div><!-- jumbotron -->
 			<!-- Navigation bar requires more formatting -->
-			<nav class="navbar navbar-toggleable-md navbar-hidden-xs navbar-light bg-primary">
+			<nav class="navbar navbar-toggleable-md navbar-light bg-primary">
 				<button class="navbar toggler navbar-toggler-right" type='button' data-toggle='collapse' data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -36,17 +36,15 @@
 			<p class="lead text-justify">This is a mockup of a web application to track Naloxone uses and purchases within an organization. You should be able to figure out how much you are spending in order to reduce overdose fatalities within your jurisdiction and how potent you need the naloxone to be to save lives.</p>
 			<div class="row">
 				<div class="col-sm-6">
-					<div class="card bg-primary">
-						<div class="card-header text-white">Finance Summary</div>
-						<div class="card-body text-white"><%= FinanceSum %></div>
-						<!-- Was trying to get the function result printed here, but Node kept saying the function was undefined -->
+					<div class="card">
+						<div class="card-header bg-primary text-white">Finance Summary</div>
+						<div class="card-body"><%= FinanceSum %></div>
 					</div>
 				</div>
 				<div class="col-sm-6">
-					<!-- Class formatting seems not to be working -->
-					<div class="card bg-danger">
-						<div class="card-header text-white">Overdose Summary</div>
-						<div class="card-body text-white"><%= OverdoseSum %></div>
+					<div class="card">
+						<div class="card-header bg-danger text-white">Overdose Summary</div>
+						<div class="card-body"><%= OverdoseSum %></div>
 					</div>
 				</div>
 			</div><!-- row -->

@@ -41,4 +41,7 @@ var server = app.listen(app.get('port'), function() {
 // "start": "pingy dev",
 // "export": "pingy export"
 
+// Start script for showing mockup to laypeople
+// "start": node app/app.js & open http://localhost:3000
+
 reload(app);
