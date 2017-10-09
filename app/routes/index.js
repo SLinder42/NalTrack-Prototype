@@ -40,7 +40,7 @@ router.get('/', function(req, res) {
 		message += " individuals. "
 		message += "Of the ";
 		message += totalNalUses;
-		message += " reported, there were ";
+		message += " uses reported, there were ";
 		message += totalNalDeaths;
 		message += " fatalities recorded."
 		return message;

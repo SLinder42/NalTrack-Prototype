@@ -1,3 +1,9 @@
+0.5.5 / 2017-10-08
+===================
+
+  * Added static html files for laypeople to view without npm
+  * Fixed Nav bar active link on data display page
+
 0.5.4 / 2017-09-29
 ===================
 
