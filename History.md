@@ -1,3 +1,10 @@
+0.5.6 / 2017-10-09
+===================
+
+  * Fixed installation instructions in Readme file
+  * Added description of application to Readme file
+  * Removed extraneous CSS and JS files from Public directory
+
 0.5.5 / 2017-10-08
 ===================
 

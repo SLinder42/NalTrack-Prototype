@@ -1,6 +1,6 @@
 {
   "name": "NalTrack",
-  "version": "0.5.5",
+  "version": "0.5.6",
   "description": "Files for Naloxone Tracking Web Application",
   "main": "app/app.js",
   "scripts": {
