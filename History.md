@@ -1,3 +1,9 @@
+0.5.7 2017-10-10
+==================
+
+  * Updated npm from version 5.30 to 5.4.2
+  * Fixed links to minified Bootstrap files on index view
+
 0.5.6 / 2017-10-09
 ===================
 
